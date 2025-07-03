@@ -1,0 +1,24 @@
+version: "3.8"
+
+services:
+  salt-master:
+    image: saltstack/salt:latest
+    container_name: salt-master
+    platform: linux/amd64
+    ports:
+      - "4505:4505"
+      - "4506:4506"
+    volumes:
+      - ./srv:/srv
+    command: salt-master
+
+  salt-minion:
+    image: saltstack/salt:latest
+    container_name: salt-minion
+    platform: linux/amd64
+    depends_on:
+      - salt-master
+    command: >
+      sh -c "echo 'master: salt-master' > /etc/salt/minion &&
+             echo 'id: salt-minion' >> /etc/salt/minion &&
+             salt-minion"

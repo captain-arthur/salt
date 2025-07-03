@@ -1,0 +1,11 @@
+file_roots:
+  base:
+    - /srv
+
+fileserver_backend:
+  - git
+
+gitfs_remotes:
+  - https://github.com/captain-arthur/salt.git
+
+gitfs_base: main
