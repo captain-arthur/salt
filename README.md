@@ -1,8 +1,3 @@
-알겠습니다. 아래는 SaltStack을 Docker Compose로 사용하는 전체 과정과 Git 연동까지 포함한 README.md 전체 내용입니다.
-docker 폴더 내부에 README.md 파일로 바로 저장 가능한 형식입니다.
-
-⸻
-
 
 # 🧂 SaltStack with Docker Compose
 
