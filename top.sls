@@ -1,4 +1,3 @@
 base:
   '*':
-    - nginx
     - file-test
