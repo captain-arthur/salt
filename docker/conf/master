@@ -1,11 +1,9 @@
-file_roots:
-  base:
-    - /srv
-
 fileserver_backend:
   - git
 
 gitfs_remotes:
-  - https://github.com/captain-arthur/salt.git
+  - https://github.com/your-username/your-salt-repo.git
 
 gitfs_base: main
+
+# pip install GitPython
